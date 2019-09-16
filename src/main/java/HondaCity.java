@@ -1,15 +1,15 @@
 public class HondaCity extends Car {
-    String carMileage;
+    private int carMileage;
 
 
-    public HondaCity(boolean isSedan, String seats, String carMileage) {
-        super(isSedan, seats);
+    public HondaCity(int carMileage) {
+        super(true, "4");
         this.carMileage = carMileage;
     }
 
     @Override
     public String getMileage() {
 
-        return carMileage;
+        return "" + carMileage + "4";
     }
 }

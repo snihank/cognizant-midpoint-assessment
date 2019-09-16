@@ -1,14 +1,14 @@
 public class WagonR extends Car{
 
-    String mileage;
+    private int mileage;
 
-    public WagonR(boolean isSedan, String seats, String mileage) {
-        super(isSedan, seats);
+    public WagonR(int mileage) {
+        super(false, "6");
         this.mileage = mileage;
     }
 
     @Override
     public String getMileage() {
-        return mileage;
+        return "" + mileage + "kml";
     }
 }

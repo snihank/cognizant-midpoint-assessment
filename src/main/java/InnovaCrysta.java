@@ -1,16 +1,16 @@
 public class InnovaCrysta extends Car{
 
-    String carMileage;
+    private int carMileage;
 
 
 
-    public InnovaCrysta(boolean isSedan, String seats, String carMileage) {
-        super(isSedan, seats);
+    public InnovaCrysta(int carMileage) {
+        super(false, "4");
         this.carMileage = carMileage;
     }
 
     @Override
     public String getMileage() {
-        return carMileage;
+        return "" + carMileage + "";
     }
 }
